@@ -433,7 +433,7 @@ int main()
 	InitializeThreadCheck();
 	TidMainThread = GetCurrentThreadId();
 
-	if (!IsSystemCodeIntegrityEnabled())
+	if (IsSystemCodeIntegrityEnabled())
 	{
 		ErrorHandler::ErrorMessage("0392 Test Mode Is Enabled. Please Disable It", 6);
 	}
@@ -548,7 +548,7 @@ int main()
 																ErrorHandler::ErrorMessage("32947 ( Thread Mismatched )", 6);
 															}
 
-															if (!IsSystemCodeIntegrityEnabled())
+															if (IsSystemCodeIntegrityEnabled())
 															{
 																ErrorHandler::ErrorMessage("0392 Test Mode Is Enabled. Please Disable It", 6);
 															}

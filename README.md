@@ -26,6 +26,7 @@
 - Stripping lsass and csrss handle permissions
 - Checking for manual mapped driver
 - Checking if hook has been unhooked
+- *Fix Driver Rand Function*
 
 # Notes
 Feel free to use this however you like. If you have any issues or any problems, feel free to open up a issue in github. Note that i will be updating this along the way, and improving it along the days. For now, this work was made in about 4 days, so this could be a long project. Other then that, enjoy.

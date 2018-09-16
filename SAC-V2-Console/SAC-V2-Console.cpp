@@ -509,11 +509,12 @@ int main()
 											{
 												BlockInput(TRUE);
 												Utlis::Injection(L"SAC-V2-DLL.dll", ProcessInfo.dwProcessId);
+												GameProcessID = ProcessInfo.dwProcessId;
 												if (DriverRequest::SendProcessIDs(GameProcessID))
 												{
 													CloseHandle(ProcessInfo.hProcess);
 													CloseHandle(ProcessInfo.hThread);
-													GameProcessID = ProcessInfo.dwProcessId;
+													
 
 													BlockInput(FALSE);
 
